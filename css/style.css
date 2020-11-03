@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{margin: 0 ; padding: 0; font-family: 'Montserrat', sans-serif;box-sizing: border-box}
+
+body{font-size: 100%;background-color: #041e41;}
+
+.p1 h1{font-size: 2rem;text-align: center;color: #ffffff;padding-top: 5vh;}
+
+
+.p2-box{display: flex;justify-content: center;align-items: flex-start;padding: 20vh 0;padding-bottom: 30vh;}
+.p2-item{margin: 0 1vw;display: flex;justify-content: center;align-items: center;flex-direction: column;width: 17vw;}
+.p2-item img{width: 17vw;margin-bottom: 2vh;}
+.p2-item h3{font-size: 1rem;color: #ffffff;text-transform: uppercase;text-align: center;margin-bottom:2vh ;}
+.p2-item h4{font-size: .7rem;color: #ffffff;text-transform: uppercase;text-align: center;}
+
+.button{background-color:#ffffff;color:#df0b4d;text-align: center;width: 15vw;padding: 3vh 2vw;
+    font-size: .7em;cursor: pointer; text-transform: uppercase;
+    border-radius: 60px;font-weight: 700;display: flex;align-items: center;justify-content: center;margin: 3vh 0;}
+ .button a{ color: #df0b4d;text-decoration: none;font-weight: 700;font-size: 1.2em;}
+ .button:hover {background-color: #df0b4d;transition: .5s;}
+ .button:hover a{color: #ffffff;}
+
+.p4{background-color: #df0b4d}
+.p4-box{display: flex;justify-content: center;align-items: center;margin: 0 4vw;} 
+.p4-item img{ width: 30vw;padding: 5vh 0;}
+.p4-item p{color: #ffffff;width: 80%;margin-left:5vw;margin-bottom: 2vh;font-weight: 400;font-size: 1em;}
+
+footer{background-color: #df0b4d;display: flex;justify-content: space-between;}
+footer p{font-size: .7rem;padding: 1vh 0;margin: 0 3vw;color: #ffffff;}
+footer p a{color:#ffffff; text-decoration: none;}
+
+@media screen and (max-width:900px){
+      .p1 h1{font-size: 2rem;width: 90vw;display: block;margin: 0 auto;align-items: center;}  
+      .p4-item p, footer p{font-size: 1rem;width: 90%;text-align: center;}
+
+    .p2-box, .p4-box, footer{flex-direction: column;align-items: flex-start;overflow-y: scroll;}
+    .p2-box{padding: 10vh 0;flex-direction: row;}
+    .p2-item{width: 50vw;align-items:center;}
+    .p2-item img{width: 50vw;}
+    .p2-item h4{width: 90%;font-size: 1rem;}
+    .p2-item h3{font-size: 1.2rem;}
+    
+    .button{width: 10vw;padding: 1vh 2vw;}
+
+    .p4-box{margin: 0;align-items: center;}
+    .p4-item img{width: 70vw;height: auto;display: block;margin: 0 auto;padding: 0;}
+}
